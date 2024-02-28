@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="ap_principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.fx.soap.uicontroller.ConsultaRucUIController">
+   <children>
+      <VBox layoutX="28.0" layoutY="33.0" prefHeight="335.0" prefWidth="545.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Ingrese el RUC" />
+                  <TextField fx:id="txt_ruc" prefHeight="25.0" prefWidth="200.0" />
+                  <Label text="Dv" />
+                  <TextField fx:id="txt_dv" prefHeight="25.0" prefWidth="128.0" />
+               </children>
+            </HBox>
+            <Label text="Nombre" />
+            <TextField fx:id="txt_nombre" prefHeight="25.0" prefWidth="339.0">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Apellido" />
+            <TextField fx:id="txt_apellido" prefHeight="25.0" prefWidth="339.0">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Ruc Anterior" />
+            <TextField fx:id="txt_rucAnterior" prefHeight="25.0" prefWidth="339.0">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Estado" />
+            <TextField fx:id="txt_estado" prefHeight="25.0" prefWidth="339.0">
+               <VBox.margin>
+                  <Insets right="50.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
