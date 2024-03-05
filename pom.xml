@@ -50,7 +50,7 @@
             <scope>test</scope>
         </dependency>
 
-<!--        Dependecias JavaFx-->
+        <!--        Dependecias JavaFx-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -66,7 +66,15 @@
             <artifactId>javafx-graphics</artifactId>
             <version>17.0.10</version>
         </dependency>
-<!--        End JavaFx-->
+
+        <!--        End JavaFx-->
+        <dependency>
+            <groupId>org.springframework.ws</groupId>
+            <artifactId>spring-ws-security</artifactId>
+            <version>4.0.10</version>
+        </dependency>
+        <!--        Ws Security-->
+
 
     </dependencies>
 
@@ -99,11 +107,11 @@
                 <configuration>
                     <packageName>app.fx.soap.wsdl</packageName>
                     <wsdlUrls>
-                        <wsdlUrl>http://localhost:8097/ws/consultaRuc.wsdl</wsdlUrl>
+                        <wsdlUrl>https://localhost:8097/ws/consultaRuc.wsdl</wsdlUrl>
                     </wsdlUrls>
-<!--                    <sourceDestDir>${sourcesDir}</sourceDestDir>-->
+                    <!--                    <sourceDestDir>${sourcesDir}</sourceDestDir>-->
                     <sourceDestDir>${project.build.directory}/../src/main/java</sourceDestDir>
-<!--                    <destDir>${classesDir}</destDir>-->
+                    <!--                    <destDir>${classesDir}</destDir>-->
                     <extension>true</extension>
                 </configuration>
             </plugin>

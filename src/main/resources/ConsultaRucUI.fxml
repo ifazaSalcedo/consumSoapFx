@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
 
 <AnchorPane fx:id="ap_principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.fx.soap.uicontroller.ConsultaRucUIController">
    <children>
-      <VBox layoutX="28.0" layoutY="33.0" prefHeight="335.0" prefWidth="545.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+      <VBox layoutX="28.0" layoutY="33.0" prefHeight="360.0" prefWidth="540.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
-            <HBox alignment="CENTER_LEFT">
-               <children>
-                  <Label text="Ingrese el RUC" />
-                  <TextField fx:id="txt_ruc" prefHeight="25.0" prefWidth="200.0" />
-                  <Label text="Dv" />
-                  <TextField fx:id="txt_dv" prefHeight="25.0" prefWidth="128.0" />
-               </children>
-            </HBox>
-            <Label text="Nombre" />
+            <Label text="Ingrese el RUC" />
+            <TextField fx:id="txt_ruc" prefHeight="25.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets right="400.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Dv">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txt_dv" prefHeight="25.0" prefWidth="128.0">
+               <VBox.margin>
+                  <Insets right="400.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Nombre">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
             <TextField fx:id="txt_nombre" prefHeight="25.0" prefWidth="339.0">
                <VBox.margin>
                   <Insets right="50.0" />
                </VBox.margin>
             </TextField>
-            <Label text="Apellido" />
+            <Label text="Apellido">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
             <TextField fx:id="txt_apellido" prefHeight="25.0" prefWidth="339.0">
                <VBox.margin>
                   <Insets right="50.0" />
                </VBox.margin>
             </TextField>
-            <Label text="Ruc Anterior" />
+            <Label text="Ruc Anterior">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
             <TextField fx:id="txt_rucAnterior" prefHeight="25.0" prefWidth="339.0">
                <VBox.margin>
                   <Insets right="50.0" />
                </VBox.margin>
             </TextField>
-            <Label text="Estado" />
+            <Label text="Estado">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
             <TextField fx:id="txt_estado" prefHeight="25.0" prefWidth="339.0">
                <VBox.margin>
                   <Insets right="50.0" />
                </VBox.margin>
             </TextField>
+            <Button fx:id="btn_cancelar" mnemonicParsing="false" text="Limpiar">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
          </children>
       </VBox>
    </children>
